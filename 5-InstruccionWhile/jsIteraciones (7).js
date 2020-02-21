@@ -11,8 +11,13 @@ function mostrar()
 	while(respuesta=="si")
 	{
 		contador ++;
-		numeroIngresado = prompt("Ingrese numero");
+		numeroIngresado = prompt("Ingrese un numero");
 		numeroIngresado = parseInt(numeroIngresado);
+		while(isNaN(numeroIngresado))
+		{
+			numeroIngresado = prompt("Error solo numeros");
+			numeroIngresado = parseInt(numeroIngresado);
+		}	
 		acumulador = acumulador + numeroIngresado;
 		respuesta = prompt("Si quiere continuar la operacion ingrese 'si'");
 	}

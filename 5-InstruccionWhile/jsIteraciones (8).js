@@ -15,15 +15,21 @@ function mostrar()
 	{
 		numeroIngresado=prompt("Ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
+		while(isNaN(numeroIngresado))
+		{
+			numeroIngresado=prompt("Error, solo numeros");
+			numeroIngresado=parseInt(numeroIngresado);
+		}
 		if(numeroIngresado<0)
 		{
 			negativo = negativo*numeroIngresado;
 		}
-		else
+		if(numeroIngresado>0)
 		{
 			positivo = positivo+numeroIngresado;
 		}
 		respuesta = prompt("Si quiere seguir escriba 'si'");
+		console.log(numeroIngresado);
 	}
 
 
