@@ -31,6 +31,7 @@ function mostrar()
 		respuesta = prompt("Si quiere seguir escriba 'si'");
 		console.log(numeroIngresado);
 	}
+	
 
 
 document.getElementById('suma').value=positivo;
