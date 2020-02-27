@@ -1,10 +1,10 @@
 function mostrar()
 {
 	var contador;
-	for(contador=0;contador<10;contador++)
+
+	for(contador=0;contador<10;console.log(contador))
 	{	
-		console.log(contador+1);
-		alert(contador+1);
+		contador++;
 	}
 
 }
