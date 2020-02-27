@@ -9,6 +9,13 @@ se debe informar si el resultado es el correcto o no.
 var respuesta;
 function comenzar()
 {
+	var primerNumero;
+	var operadorMatematico;
+	var segundoNumero;
+	var respuesta;
+
+	primerNumero=Math.Random()
+	primerNumero=document.getElementById('PrimerNumero').value;
 
 	
 
